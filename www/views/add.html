@@ -4,7 +4,20 @@
     <input type="text" placeholder="Enter Your Name" ng-model="name"/>
   </label>
   <label class="item item-input">
-    <input type="text" placeholder="Enter Your Blood Group" ng-model="blood"/>
+    <select ng-model="blood" style="width:100%;border:none;">
+			<option value="A+">A+ ve</option>
+			<option value="B+">B+ ve</option>
+			<option value="AB+">AB+ ve</option>
+			<option value="A-">A- ve</option>
+			<option value="B-">B- ve</option>
+			<option value="o+">O+ ve</option>
+		</select>
+  </label>
+	<label class="item item-input">
+    <input type="text" placeholder="Enter Your Phone Number" ng-model="phonenumber"/>
+  </label>
+	<label class="item item-input">
+    <input type="text" placeholder="Enter Your Place" ng-model="place"/>
   </label>
   <button type="submit" class="button button-block" ng-click="addData()">SUBMIT</button>
 </form>

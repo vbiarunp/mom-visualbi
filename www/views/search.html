@@ -1,0 +1,23 @@
+<div class="searchMainDiv">
+  <div class="list">
+    <label class="item item-input item-select">
+      <div class="input-label">Blood Group Type</div>
+      <select ng-model="blood" style="width:100%;">
+        <option value="A+">A+ ve</option>
+        <option value="B+">B+ ve</option>
+        <option value="AB+">AB+ ve</option>
+        <option value="A-">A- ve</option>
+        <option value="B-">B- ve</option>
+        <option value="o+">O+ ve</option>
+      </select>
+    </label>
+  </div>
+  <div class="list" ng-repeat="x in filterData">
+    <a class="item item-avatar">
+      <h2>{{x.name}}</h2>
+      <p>Contact : {{x.blood}}</p>
+      <p>Contact : {{x.phone}}</p>
+      <p>Place : {{x.place}}</p>
+    </a>
+  </div>
+</div>

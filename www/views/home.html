@@ -1,12 +1,13 @@
-<div>
+<div class="homeDiv">
 	<div class="list list-inset">
-  <label class="item item-input">
-    <input type="text" placeholder="Enter Blood Group"><a ng-href="#/search" ng-model="searchVal">Search</a>
-  </label>
-</div>
+  	<label class="item item-input">
+    	<input type="text" placeholder="Enter Blood Group" ng-model="searchVal"><a ng-href="#/search/{{searchVal}}">Search</a>
+  	</label>
+	</div>
+	<div class="list list-inset" style="text-align: center;">
   	<p>or</p>
-  
-  <button><a ng-href="#/add">
-  Default</a>
-</button>
+	</div>
+	<div class="list list-inset">
+  	<button style="border-color:transparent;background-color:#387ef5;color:#fff;width:100%;padding:1%;"><a ng-href="#/add" style="color:#fff;">Register</a></button>
+	</div>
 </div>
